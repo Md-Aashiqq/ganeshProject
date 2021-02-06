@@ -1,0 +1,132 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .bill,
+  .bill * {
+    visibility: visible;
+  }
+  .buttonGrp,
+  .buttonGrp * {
+    visibility: hidden;
+  }
+  .bill {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.dateInfo {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  padding: 10px;
+  border: 1px solid blueviolet;
+}
+.itemsHeader {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: 2px soild #333;
+}
+.billField {
+  border: 1px solid blueviolet;
+  border-bottom: none;
+  min-height: 350px;
+  scroll-behavior: smooth;
+}
+.items {
+  padding: 10px;
+}
+.item {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+}
+.medName {
+  flex: 0.6;
+}
+.quantity {
+  justify-content: center;
+  flex: 0.2;
+}
+.price {
+  justify-content: center;
+  flex: 0.2;
+}
+.totalField {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blueviolet;
+  border-top: none;
+  align-items: center;
+  padding: 10px;
+}
+.totalHeading {
+  border-right: 1px solid blueviolet;
+}
+.totalAmount {
+  /* justify-content: center;
+  align-items: center; */
+}
+.totalAmount h4 {
+  font-size: 24px;
+  /* font-weight: 400; */
+}
+
+.buttonGrp {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.autoDiv {
+  position: absolute;
+  /* position: absolute;
+  top: 0; */
+  min-height: 100px;
+  z-index: 99;
+  width: 220px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: #d3d3d3;
+  overflow-y: scroll;
+}
+.autoItem {
+  background-color: rgba(100, 100, 100, 0.9);
+  color: white;
+  transition: 80ms ease-out;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 1rem 0 1rem 0.5rem;
+  width: 100%;
+}
+.autoItem:hover {
+  background: peru;
+  color: white;
+}
+/* .del {
+  position: absolute;
+  transform: translateX(0);
+  transition: 3s ease-in;
+}
+
+.item:hover .del {
+  transform: translateX(100);
+  z-index: 1;
+} */
